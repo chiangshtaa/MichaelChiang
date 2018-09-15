@@ -7,12 +7,14 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 
+import './App.css';
+
 
 class App extends Component {
   render() {
     return (
       <Router>
-        <div>
+        <div className="App">
           <Navbar />
           <Route exact path="/" component={ Home } />
           <Route path="/about" component={ About } />
