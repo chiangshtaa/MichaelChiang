@@ -1,21 +1,17 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
 
+import './css/CustomNavbar.css';
+
 // import {Navbar, Nav, NavItem, Button, Glyphicon} from 'react-bootstrap';
 
 class CustomNavbar extends Component {
   render() {
     return (
       <div>
-        <div style={{ display: "flex" }}>
-          <div
-            style={{
-              padding: "20px",
-              width: "80%",
-              background: "#f0f0f0"
-            }}
-          >
-            <ul style={{ listStyleType: "none", padding: 0 }}>
+        <div className="container">
+          <div className="CustomNavBar">
+            <ul className="list">
               <li>
                 <Link to="/">Home</Link>
               </li>
