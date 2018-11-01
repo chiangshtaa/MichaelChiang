@@ -8,7 +8,7 @@ import './css/CustomNavbar.css';
 class CustomNavbar extends Component {
   render() {
     return (
-      <div>
+      // <div>
         <div className="container">
           <div className="CustomNavBar">
             <ul className="list">
@@ -30,7 +30,7 @@ class CustomNavbar extends Component {
             </ul>
           </div>
         </div>
-      </div>
+      // </div>
     );
   }
 }

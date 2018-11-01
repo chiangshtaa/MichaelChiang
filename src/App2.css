@@ -1,0 +1,62 @@
+body, html {
+  margin: 0;
+  /*overflow: hidden;*/
+  height:100%;
+  /*scroll-behavior: smooth;*/
+}
+
+/*body {
+  scroll-behavior: smooth;
+}*/
+
+/*html {
+  scroll-behavior: smooth;
+}*/
+
+@media (min-width: 768px){
+  #left {
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    width: 20%;
+    overflow-y: scroll;
+    display: table;
+  }
+  
+  #right {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    overflow-y: scroll;
+    width: 80%;
+  }
+}
+
+#left {
+  background-color: white;
+  text-align: center;
+  height:100%;
+}
+
+.table-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.nav {
+  display: block;
+}
+
+#right {
+  background-color: #f0f0f0;
+  height:100%;
+  text-align: center;
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style-type: none;
+  display: block;
+}
