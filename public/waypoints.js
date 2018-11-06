@@ -1,24 +1,3 @@
-// const $ = require('jQuery');
-
-// $(window).scroll(function() {
-//     var position = $(this).scrollTop();
-//     // console.log('here');
-//     console.log('position', position);
-//     $('.scroll').each(function() {
-//         // let id = this.id;
-//         // let target = id.offsetTop;
-//         var target = $(this).offset().top;
-//         var id = this.id;
-//         console.log()
-//         // console.log(id);
-//         if (position >= target) {
-//             $('.nav > li').removeClass('active');
-//             // $('.nav > li > a[href=#' + id + ']').addClass('active');
-//             $('#' + id).addClass('active');
-//         }
-//     });
-// });
-
 $(document).ready(function () {
   $(document).on('scroll', onScroll);
   
@@ -47,7 +26,7 @@ let diff = $(window).height() / 2;
 
 function onScroll(event){
   var scrollPos = $(document).scrollTop();
-  $('.scroll').each(function() {
+  $('.scroll-container').each(function() {
     let $target = $(this);
     let targetMenu = '#' + this.id + 'Menu';
     let $targetMenu = $(targetMenu);
