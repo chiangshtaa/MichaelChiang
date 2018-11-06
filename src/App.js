@@ -24,8 +24,8 @@ class App extends Component {
         <div id="right">
           <Home />
           <About />
-          <Skills />
           <Projects />
+          <Skills />
           <Contact />
         </div>
       </div>
