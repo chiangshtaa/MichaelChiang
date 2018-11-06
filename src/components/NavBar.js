@@ -48,11 +48,11 @@ class Navbar extends Component {
         <img src={profilePic} id="profilePic" alt="profilePic" />
         <h3> Michael Chiang </h3>
         <div className="nav">
-          <li id="homePage" className="active" > Home </li>
-          <li id="aboutPage" > About </li>
-          <li id="skillsPage" > Skills </li>
-          <li id="projectsPage" > Projects </li>
-          <li id="contactPage" > Contact </li>
+          <li id="homeMenu" className="active" > Home </li>
+          <li id="aboutMenu" > About </li>
+          <li id="skillsMenu" > Skills </li>
+          <li id="projectsMenu" > Projects </li>
+          <li id="contactMenu" > Contact </li>
         </div>
       </div>
     );

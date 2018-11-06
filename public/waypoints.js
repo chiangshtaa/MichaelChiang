@@ -20,81 +20,46 @@
 // });
 
 $(document).ready(function () {
-    $(document).on("scroll", onScroll);
+  $(document).on('scroll', onScroll);
+  
+  //smooth scroll
+  $('.nav li').on('click', function(e) {
+    e.preventDefault();
+    $(document).off('scroll');
     
-    //smoothscroll
-    $('li').on('click', function (e) {
-        console.log('hereeee');
-        e.preventDefault();
-        $(document).off("scroll");
-        
-        // $('li').each(function () {
-        //     $(this).removeClass('active');
-        // })
-        // $(this).addClass('active');
-        // console.log('this', this, this.id);
-        // // let target = this.id;
-        // var target = this.id.slice(0, -4);
-        // let realTarget = target.slice(0, -4);
-        // console.log('target', target);
-        // let $target = $('#' + target);
-        // console.log('$target', $target);
-        // smoothScrollTo(realTarget, 1000).done(after());
-        // $('li').removeClass('active');
-        // $target.addClass('active');
+    let id = this.id;
+    let $target = $('#' + id.slice(0, -4));
 
-
-
-
-        console.log('this', this);
-        let target = this.id;
-        console.log('target', target);
-        let $target = $('#' + target.slice(0, -4));
-
-        let targetPage = $('#' + target);
-        console.log('page', targetPage);
-
-        console.log('$target', $target);
-        console.log('top', $target.offset().top);
-        $('html, body').animate({
-            'scrollTop': $target.offset().top + 2
-        }, 1000, function () {
-            // window.location.hash = '#' + target.slice(0, -4);
-            $(document).on("scroll", onScroll);
-        });
-        $('li').removeClass('active');
-        targetPage.addClass('active');
-
+    let $targetMenu = $('#' + id);
+    $('html, body').animate({
+      'scrollTop': $target.offset().top + 2
+    }, 1000, function () {
+      // window.location.hash = '#' + target.slice(0, -4);
+      $(document).on('scroll', onScroll);
     });
+    $('.nav li').removeClass('active');
+    $targetMenu.addClass('active');
+
+  });
 });
 
 let diff = $(window).height() / 2;
-// console.log(diff);
 
 function onScroll(event){
-    var scrollPos = $(document).scrollTop();
-    // console.log(scrollPos);
-    $('.scroll').each(function (hello, e) {
-        // console.log('this', this);
-        let targetPage = '#' + this.id + 'Page';
-        // console.log('targetPage', targetPage);
-        let realTarget = $(targetPage);
-        let target = $(this)//.offset().top;
-        // console.log('target', target);
-        if (target.position().top - diff <= scrollPos && target.position().top + target.height() > scrollPos) {
-            $('.nav li').removeClass("active");
-            realTarget.addClass("active");
-        }
-        // else{
-        //     realTarget.removeClass("active");
-        // }
-    });
+  var scrollPos = $(document).scrollTop();
+  $('.scroll').each(function() {
+    let $target = $(this);
+    let targetMenu = '#' + this.id + 'Menu';
+    let $targetMenu = $(targetMenu);
+    if ($target.position().top - diff <= scrollPos && $target.position().top + $target.height() > scrollPos) {
+      $('.nav li').removeClass('active');
+      $targetMenu.addClass('active');
+    }
+  });
 }
 
 
-function smoothScrollTo(target, duration, callback) {
-  var r = $.Deferred();
-  console.log('target HERERHRE', target);
+function smoothScrollTo(target, duration) {
   // let targetElement = document.querySelector('#' + target);
   let targetElement = document.getElementById(target);
   // let targetPosition = targetElement.getBoundingClientRect().top;
@@ -102,15 +67,12 @@ function smoothScrollTo(target, duration, callback) {
   let startPosition = window.pageYOffset;
   let distance = targetPosition - startPosition;
   let startTime = null;
-  console.log('target', targetElement);
-  console.log('targetPos', targetPosition);
 
   function animation(currentTime) {
     if (startTime === null) startTime = currentTime;
     let timeElapsed = currentTime - startTime;
     let run = ease(timeElapsed, startPosition, distance, duration);
     window.scrollTo(0, run);
-    // console.log('run', run);
     if (timeElapsed < duration) requestAnimationFrame(animation);
   }
 
@@ -121,7 +83,6 @@ function smoothScrollTo(target, duration, callback) {
     return -c / 2 * (t * (t - 2) - 1) + b;
   }
   requestAnimationFrame(animation);
-  return r;
 }
 
 
@@ -141,22 +102,3 @@ function smoothScrollTo(target, duration, callback) {
 //         }
 //     });
 // }
-
-    // window.scroll(function() {
-    //     console.log('IHNSIDE');
-    //     var position = this.scrollTop();
-
-    //     let sections = document.getElementsByClassName('scroll');
-    //     console.log(sections);
-    //     sections.each(function() {
-    //         var target = this.offset().top;
-    //         var id = this.attr('id');
-
-    //         let next = document.getElementsByClassName('active');
-    //         let others = document.querySelector('.nav > li > a[href=#' + id + ']');
-    //         if (position >= target) {
-    //             next.removeClass('active');
-    //             others.addClass('active');
-    //         }
-    //     });
-    // });
