@@ -1,7 +1,7 @@
 .table-cell {
   display: table-cell;
   vertical-align: middle;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', 'sans-serif';
   font-size: 14px;
 }
 
@@ -21,4 +21,6 @@ li {
   list-style-type: none;
   display: block;
   padding: 12px 0px;
+  cursor: pointer;
 }
+
