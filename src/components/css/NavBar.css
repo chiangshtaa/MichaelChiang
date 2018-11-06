@@ -1,8 +1,24 @@
-li {
-  list-style-type: none;
-  display: block;
+.table-cell {
+  display: table-cell;
+  vertical-align: middle;
+  font-family: 'Montserrat';
+  font-size: 14px;
+}
+
+#profilePic {
+  border-radius: 50%;
+}
+
+h3 {
+  font-weight: 800;
 }
 
 .nav {
   display: block;
+}
+
+li {
+  list-style-type: none;
+  display: block;
+  padding: 12px 0px;
 }

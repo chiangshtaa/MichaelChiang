@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 
+import profilePic from './css/img/profilePic.jpeg';
 import './css/NavBar.css';
 
 class Navbar extends Component {
@@ -36,6 +37,7 @@ class Navbar extends Component {
   render() {
     return (
       <div className="table-cell">
+        <img src={profilePic} id="profilePic" alt="profilePic" />
         <h3> Michael Chiang </h3>
         <div className="nav">
           <li onClick={() => this.smoothScrollTo('home', 1000)}> Home </li>
