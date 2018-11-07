@@ -32,14 +32,6 @@ body, html {
 }
 
 #right {
-  background-image: url("./components/css/img/snowboard-white.jpeg");
-
-  /*background-image: url("./components/css/img/snowboard-mountain.jpg");*/
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  /*background-attachment: fixed;*/
-  background-color: #f0f0f0;
   height: 100%;
   text-align: center;
   /*scroll-behavior: smooth;*/
@@ -59,32 +51,6 @@ body, html {
   display: table;
 }
 
-/*#right::after {
-  position: absolute;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  background-image: url("./components/css/img/snowboard-mountain.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 0.5;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-}*/
-/*.table-cell {
-  display: table-cell;
-  vertical-align: middle;
-}*/
-/*
-.nav {
-  display: block;
-}*/
 
-/*
-li {
-  list-style-type: none;
-  display: block;
-}*/
+
+
