@@ -5,4 +5,23 @@
 .SkillsMe {
   vertical-align: middle;
   display: table-cell;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .skills-info {
+    width: 40%;
+    /*display: table;*/
+    left: 0;
+    position: absolute;
+  }
+
+  .skills-wheel {
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 60%;
+    position: absolute;
+  }
+  
 }

@@ -12,7 +12,7 @@ $(document).ready(function() {
 
   var settings = {
     entries: entries,
-    width: '60%', // width of tag cloud
+    width: '100%', // width of tag cloud
     height: '90%', // height of tag cloud
     radius: '80%', // radius of tag cloud
     radiusMin: 75,

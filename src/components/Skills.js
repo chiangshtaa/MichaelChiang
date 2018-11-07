@@ -7,7 +7,12 @@ class Skills extends Component {
     return (
       <div className="Skills scroll-container" id="skills">
         <div className="SkillsMe">
-          <div id="tag-cloud"></div>
+          <div className="skills-info">
+            HELLO THERE, THIS IS MY SKILLS PAGE
+          </div>
+          <div className="skills-wheel">
+            <div id="tag-cloud"></div>
+          </div>
         </div>
       </div>
     );
