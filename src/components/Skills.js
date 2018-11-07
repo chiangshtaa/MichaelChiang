@@ -7,10 +7,7 @@ class Skills extends Component {
     return (
       <div className="Skills scroll-container" id="skills">
         <div className="SkillsMe">
-          Skills
-          React
-          Javascript
-          HTML
+          <div id="tag-cloud"></div>
         </div>
       </div>
     );
