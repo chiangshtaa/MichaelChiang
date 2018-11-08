@@ -34,10 +34,24 @@ h3 {
   display: block;
 }
 
-li {
+.menu {
   list-style-type: none;
   display: block;
   padding: 12px 0px;
   cursor: pointer;
 }
 
+.active {
+  color: #F38A8A;
+  border-bottom: 2px solid #F38A8A;
+  border-top: 2px solid #F38A8A;
+}
+
+/*li {
+  list-style-type: none;
+  display: block;
+  padding: 12px 0px;
+  cursor: pointer;
+}
+
+*/
