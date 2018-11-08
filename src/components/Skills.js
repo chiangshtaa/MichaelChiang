@@ -9,6 +9,9 @@ class Skills extends Component {
         <div className="SkillsMe">
           <div className="skills-info">
             HELLO THERE, THIS IS MY SKILLS PAGE
+            HELLO THERE, THIS IS MY SKILLS PAGE
+            HELLO THERE, THIS IS MY SKILLS PAGE
+            HELLO THERE, THIS IS MY SKILLS PAGE
           </div>
           <div className="skills-wheel">
             <div id="tag-cloud"></div>

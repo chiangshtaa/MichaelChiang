@@ -1,27 +1,43 @@
 .Skills {
-  background: green;
+  background-color: #ccc;
+  /*overflow: auto;*/
+  /*display: table;*/
+  /*width: 100%;*/
 }
 
 .SkillsMe {
-  vertical-align: middle;
+/*  vertical-align: middle;
   display: table-cell;
-  position: relative;
+  position: relative;*/
+  /*display: inline-block;*/
+  /*height: 100%;*/
+  /*overflow: auto;*/
+  display: table;
+  /*width: 100%;*/
 }
 
-@media (min-width: 768px) {
-  .skills-info {
-    width: 40%;
-    /*display: table;*/
-    left: 0;
-    position: absolute;
-  }
+.skills-info, .skills-wheel {
+  display: table-cell;
+  vertical-align: top;
+}
 
-  .skills-wheel {
-    right: 0;
-    top: 50%;
-    transform: translate(0, -50%);
-    width: 60%;
-    position: absolute;
+@media (min-width: 768px){
+  .skills-info {
+    width: 44%;
+    margin: 3%;
+    left: 0;
+    float: left;
+    position: relative;
+    color: black;
+    text-align: left;
   }
   
+  .skills-wheel {
+    position: relative;
+    right: 0;
+    float: right;
+    width: 44%;
+    margin: 3%;
+  }
 }
+

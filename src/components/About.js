@@ -5,7 +5,7 @@ import './css/About.css';
 class About extends Component {
   render() {
     return (
-      <div className="About scroll-container"  id="about">
+      <div className="About scroll-container" id="about">
         <div className="AboutMe">
           <div className="info">
             <h2> About Me </h2>
@@ -51,9 +51,7 @@ class About extends Component {
               and a strong passion for engineering.
             </div>
           </div>
-          <div className="tictactoe">
-            TIC TAC TOE
-          </div>
+          <div className="tictactoe">TIC TAC TOE</div>
         </div>
       </div>
     );
