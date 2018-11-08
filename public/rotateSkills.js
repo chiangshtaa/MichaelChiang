@@ -4,8 +4,8 @@ $(document).ready(function() {
     return {
       tooltip: entry,
       image: `./skills/${entry}.png`,
-      width: '70',
-      height: '70',
+      width: '50',
+      height: '50',
       target: '_top'
     }
   })
@@ -36,7 +36,7 @@ $(document).ready(function() {
     tooltipFontFamily: 'Montserrat, Arial, sans-serif',
     tooltipFontSize: '12',
     tooltipFontColor: 'black',
-    tooltipFontWeight: 'normal',//bold
+    tooltipFontWeight: 'bold',//bold, normal
     tooltipFontStyle: 'normal',//italic 
     tooltipFontStretch: 'normal',//wider, narrower, ultra-condensed, extra-condensed, condensed, semi-condensed, semi-expanded, expanded, extra-expanded, ultra-expanded
     tooltipFontToUpperCase: true,
