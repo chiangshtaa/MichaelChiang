@@ -6,6 +6,10 @@
   /*height: 100%;*/
 }
 
+h2 {
+  text-align: center;
+}
+
 .SkillsMe {
 /*  vertical-align: middle;
   display: table-cell;
@@ -42,3 +46,11 @@
   }
 }
 
+.skills-page-contact {
+  display: inline-block;
+  color: #F38A8A;
+}
+
+.end {
+  display: inline-block;
+}

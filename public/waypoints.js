@@ -2,7 +2,7 @@ $(document).ready(function () {
   $(document).on('scroll', onScroll);
   
   //smooth scroll
-  $('.nav li').on('click', function(e) {
+  $('.menu').on('click', function(e) {
     e.preventDefault();
     $(document).off('scroll');
     
@@ -16,7 +16,7 @@ $(document).ready(function () {
       // window.location.hash = '#' + target.slice(0, -4);
       $(document).on('scroll', onScroll);
     });
-    $('.nav li').removeClass('active');
+    $('.menu').removeClass('active');
     $targetMenu.addClass('active');
 
   });
@@ -31,7 +31,7 @@ function onScroll(event){
     let targetMenu = '#' + this.id + 'Menu';
     let $targetMenu = $(targetMenu);
     if ($target.position().top - diff <= scrollPos && $target.position().top + $target.height() > scrollPos) {
-      $('.nav li').removeClass('active');
+      $('.menu').removeClass('active');
       $targetMenu.addClass('active');
     }
   });
@@ -63,21 +63,3 @@ function smoothScrollTo(target, duration) {
   }
   requestAnimationFrame(animation);
 }
-
-
-// function onScroll(event) {
-//     var position = $(this).scrollTop();
-//     console.log('position on scroll', position);
-
-//     $('.scroll').each(function() {
-//         console.log('this', this);
-//         var target = $(this).offset().top;
-//         var id = this.id + 'Page';
-
-//         if (position >= target) {
-//             $('.nav > li').removeClass('active');
-//             // $('.nav > li > a[href=#' + id + ']').addClass('active');
-//             $('#' + id).addClass('active');
-//         }
-//     });
-// }
