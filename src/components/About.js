@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import './css/About.css';
+import ticTacToe from './css/img/tictactoe.jpg';
 
 class About extends Component {
   render() {
@@ -49,9 +50,10 @@ class About extends Component {
               I may not have a degree in computer science or have 5+ years of engineering 
               experience, but I do have an ongoing drive, a demonstrated ability to learn, 
               and a strong passion for engineering.
-            </div>
+            </div></div>
+          <div className="tictactoe-container">
+            <img className="tictactoe" src={ticTacToe} alt="tictactoe" />
           </div>
-          <div className="tictactoe">TIC TAC TOE</div>
         </div>
       </div>
     );

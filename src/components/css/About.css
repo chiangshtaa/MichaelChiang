@@ -17,10 +17,12 @@ h2 {
   /*position: relative;*/
   display: inline-block;
   /*vertical-align: top;*/
+  /*display: table;*/
 }
 
-.tictactoe {
-  background-color: red;
+.tictactoe-container {
+  background-color: black;
+  transform: translate(0, 50%);
 }
 
 @media (min-width: 768px){
@@ -35,8 +37,8 @@ h2 {
     display: table;
   }
   
-  .tictactoe {
-    position: absolute;
+  .tictactoe-container {
+    /*position: absolute;*/
     /*top: 0;*/
     /*bottom: 0;*/
     right: 0;
@@ -44,6 +46,11 @@ h2 {
     width: 44%;
     margin: 3%;
   }
+}
+
+.tictactoe {
+  width: 94%;
+  margin: 3%;
 }
 
 
