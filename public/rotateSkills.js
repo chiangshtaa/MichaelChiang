@@ -13,7 +13,7 @@ $(document).ready(function() {
   var settings = {
     entries: entries,
     width: '100%', // width of tag cloud
-    height: '90%', // height of tag cloud
+    height: '100%', // height of tag cloud
     radius: '80%', // radius of tag cloud
     radiusMin: 75,
     bgDraw: true, // background
@@ -26,7 +26,7 @@ $(document).ready(function() {
 
     fontFamily: 'Montserrat, Arial, sans-serif',
     fontSize: '15',
-    fontColor: '#fff',
+    fontColor: 'black',
     fontWeight: 'normal',//bold
     fontStyle: 'normal',//italic 
     fontStretch: 'normal',//wider, narrower, ultra-condensed, extra-condensed, condensed, semi-condensed, semi-expanded, expanded, extra-expanded, ultra-expanded
