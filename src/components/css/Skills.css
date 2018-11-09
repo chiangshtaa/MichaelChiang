@@ -75,7 +75,32 @@
 
 rect {
   rx: 50%;
-  /*border: 5px black solid;*/
+  width:95%;
+  height: 95%;
+  stroke: black;
+  stroke-width: 5px;
+  x: 2.5%;
+  y: 2.5%;
+}
+
+/*svg {
+  top: 5px;
+  bottom: 5px;
+  left: 5px;
+  right: 5px;
+}*/
+
+a {
+  cursor: pointer;
+}
+
+image {
+  width: 8%;
+  height: 8%;
+}
+
+text {
+  font-size: 1.25vw;
 }
 
 

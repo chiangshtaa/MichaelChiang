@@ -1,4 +1,11 @@
-$(document).ready(function() {
+import $ from 'jquery';
+
+import SVG3DTagCloud from './rotateSkills.js';
+console.log('cloud', SVG3DTagCloud);
+
+export default function(conditional) {
+  console.log(conditional);
+
   var entries = ['css3', 'github', 'html5', 'javascript', 'jest', 'jquery', 'mongoDB', 'nodeJS', 'postgreSQL', 'react', 'redux'];
   entries = entries.map((entry) => {
     return {
@@ -6,7 +13,6 @@ $(document).ready(function() {
       image: `./skills/${entry}.png`,
       width: '50',
       height: '50',
-      target: '_top'
     }
   })
 
@@ -34,7 +40,7 @@ $(document).ready(function() {
 
     // tooltip options
     tooltipFontFamily: 'Montserrat, Arial, sans-serif',
-    tooltipFontSize: '5',
+    tooltipFontSize: '10',
     tooltipFontColor: 'black',
     tooltipFontWeight: 'normal',//bold, normal
     tooltipFontStyle: 'normal',//italic 
@@ -45,8 +51,25 @@ $(document).ready(function() {
     tooltipDiffY: 0
   };
 
-  $('#tag-cloud').svg3DTagCloud(settings);
-});
+  if (conditional) {
+    entries = entries.map((entry) => {
+      let skill = entry.tooltip;
+      return {
+        label: skill,
+        width: '50',
+        height: '50',
+      }
+    })
+    settings.entries = entries;
+    settings.bgColor = '#444';
+    settings.fontSize = '24';
+    settings.fontColor = "#04A4CC";
+    settings.fontWeight = 'bold';
+  }
+
+  return new SVG3DTagCloud( document.getElementById( 'tag-cloud'  ), settings );
+  // $('#tag-cloud').svg3DTagCloud(settings);
+};
 
 // https://www.jqueryscript.net/text/3D-Interactive-SVG-Tag-Cloud-Plugin-With-jQuery-SVG-3D-Tag-Cloud.html
 

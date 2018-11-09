@@ -2,7 +2,27 @@ import React, { Component } from 'react';
 
 import './css/Skills.css';
 
+import rotate from './rotate.js';
+import { rotateSkills } from './rotateSkills.js';
+import $ from 'jquery';
+
 class Skills extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      icon: false
+    }
+  }
+
+  switch() {
+    $('svg').remove();
+    let next = !this.state.icon;
+    rotate(next);
+    this.setState({
+      icon: next
+    })
+  }
+
   render() {
     return (
       <div className="Skills scroll-container" id="skills">
@@ -27,7 +47,7 @@ class Skills extends Component {
                 </div>
                 <div>
                   <span>Please check out my </span>
-                  <a href="https://www.linkedin.com/in/michaelchiang3/" target="_blank">
+                  <a href="https://www.linkedin.com/in/michaelchiang3/">
                     <span className=".linkedIn">
                       LinkedIn
                     </span>
@@ -39,7 +59,7 @@ class Skills extends Component {
                   <span className="end">&nbsp;me!</span>
                 </div></div>
               <div className="switch">
-                <button type="button">Click Me!</button>
+                <button type="button" onClick={() => this.switch()}>Click Me!</button>
               </div>
             </div>
             <div className="wheel-container">
