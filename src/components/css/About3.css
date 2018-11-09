@@ -1,0 +1,75 @@
+.About {
+  /*background-color: #f0f0f0;*/
+  /*background-color: #eceaea;*/
+  background-color: #ccc;
+  /*height: 100%;*/
+  width: 100%;
+}
+
+h2 {
+  /*text-align: left;*/
+  margin-top: 4%;
+  margin-left: 4%;
+}
+
+.AboutMe {
+  /*height: 100%;*/
+  /*vertical-align: middle;*/
+  /*display: table-cell;*/
+  /*position: relative;*/
+  display: inline-block;
+  /*vertical-align: top;*/
+  /*display: table;*/
+}
+.info .tictactoe-container {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.tictactoe-container {
+  background-color: black;
+  vertical-align: middle;
+  /*right: 0;*/
+  float: right;
+  width: 38%;
+  margin-left: 4%;
+}
+
+@media (min-width: 768px){
+  .info {
+    /*display: inline-block;*/
+    width: 46%;
+    margin-left: 4%;
+    /*left: 0;*/
+    float: left;
+    position: relative;
+    color: black;
+    text-align: left;
+    /*display: table;*/
+    margin-bottom: 2%;
+    margin-top: 2%;
+  }
+  
+  .tictactoe-container {
+    /*display: inline-block;*/
+    background-color: black;
+    vertical-align: middle;
+    /*display: table-cell;*/
+    /*right: 0;*/
+    float: right;
+    width: 38%;
+    margin-right: 4%;
+  }
+
+}
+
+.tictactoe {
+  width: 94%;
+  margin: 3%;
+}
+
+
+
+
+
+
