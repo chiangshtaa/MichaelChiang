@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
-import './css/About.css';
+// import './css/About.css';
+
 import ticTacToe from './css/img/tictactoe.jpg';
 
 class About extends Component {
@@ -8,8 +9,8 @@ class About extends Component {
     return (
       <div className="About scroll-container" id="about">
         <div className="AboutMe">
+          <h2>About Me</h2>
           <div className="info">
-            <h2> About Me </h2>
             <div>
               When I was young, I had a very different idea about
               what it meant to be a software engineer.  Watching my dad

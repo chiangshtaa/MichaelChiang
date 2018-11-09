@@ -7,14 +7,13 @@ class Skills extends Component {
     return (
       <div className="Skills scroll-container" id="skills">
         <div className="SkillsMe">
+          <h2>Skills & Experience</h2>
           <div className="skills-info">
-            <h2> Skills & Experience</h2>
             <div>
               My main area of expertise is web development.  I work mostly 
               with Javascript, ReactJS, HTML, and CSS to build web apps.  I 
               also have experience in backend technologies including NodeJS/Express 
               and both relational and non-relational databases.
-              I'm a Javascript web developer
             </div>
             <br/>
             <div>

@@ -7,7 +7,7 @@
 }
 
 h2 {
-  text-align: center;
+  /*text-align: center;*/
 }
 
 .SkillsMe {
@@ -24,13 +24,18 @@ h2 {
 .skills-info, .skills-wheel {
   display: table-cell;
   vertical-align: top;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  /*margin-left: 4%;*/
+  /*margin-right: 2%;*/
 }
 
-@media (min-width: 768px){
+@media (min-width: 900px){
   .skills-info {
-    width: 24%;
-    margin: 3%;
-    left: 0;
+    width: 34%;
+    margin-left: 4%;
+    margin-right: 2%;
+    /*left: 0;*/
     float: left;
     position: relative;
     color: black;
@@ -39,10 +44,11 @@ h2 {
   
   .skills-wheel {
     position: relative;
-    right: 0;
-    float: right;
-    width: 64%;
-    margin: 3%;
+    /*right: 0;*/
+    float: left;
+    width: 54%;
+    margin-right: 4%;
+    margin-left: 2%;
   }
 }
 

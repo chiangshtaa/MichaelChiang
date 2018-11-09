@@ -7,7 +7,9 @@
 }
 
 h2 {
-  text-align: center;
+  /*text-align: left;*/
+  margin-top: 4%;
+  margin-left: 4%;
 }
 
 .AboutMe {
@@ -19,48 +21,44 @@ h2 {
   /*vertical-align: top;*/
   /*display: table;*/
 }
+.info .tictactoe-container {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
 
 .tictactoe-container {
-  /*display: inline-block;*/
   background-color: black;
-  /*transform: translate(0, 44%);*/
-  /*top: 50%;*/
-  /*bottom: 10%;*/
-  /*transform: translateY(25%);*/
   vertical-align: middle;
-  /*display: table-cell;*/
-  right: 0;
+  /*right: 0;*/
   float: right;
-  width: 44%;
-  margin: 3%;
+  width: 38%;
+  margin-left: 4%;
 }
 
 @media (min-width: 768px){
   .info {
     /*display: inline-block;*/
-    width: 44%;
-    margin: 3%;
-    left: 0;
+    width: 46%;
+    margin-left: 4%;
+    /*left: 0;*/
     float: left;
     position: relative;
     color: black;
     text-align: left;
-    display: table;
+    /*display: table;*/
+    margin-bottom: 2%;
+    margin-top: 2%;
   }
   
   .tictactoe-container {
     /*display: inline-block;*/
     background-color: black;
-    /*transform: translate(0, 44%);*/
-    /*top: 50%;*/
-    /*bottom: 10%;*/
-    /*transform: translateY(25%);*/
     vertical-align: middle;
     /*display: table-cell;*/
-    right: 0;
+    /*right: 0;*/
     float: right;
-    width: 44%;
-    margin: 3%;
+    width: 38%;
+    margin-right: 4%;
   }
 
 }
