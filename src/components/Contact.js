@@ -11,12 +11,12 @@ class Contact extends Component {
           <div className="contact-container">
 
             <div className="contact-info">
-              <input className="input" type="text" placeholder="Your Name"/>
+              <input className="input name" type="text" placeholder="Your Name"/>
               <input className="input email" type="text" placeholder="Email Address"/>
             </div>
 
             <div className="subject">
-              <input className="input" type="text" placeholder="Subject"/>
+              <input className="input subject" type="text" placeholder="Subject"/>
             </div>
 
             <div className="message">
