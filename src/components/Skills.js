@@ -14,6 +14,10 @@ class Skills extends Component {
     }
   }
 
+  componentDidMount() {
+    rotate(this.state.icon);
+  }
+
   switch() {
     $('svg').remove();
     let next = !this.state.icon;

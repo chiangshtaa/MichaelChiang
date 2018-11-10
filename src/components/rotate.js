@@ -1,7 +1,6 @@
-import $ from 'jquery';
+// import $ from 'jquery';
 
 import SVG3DTagCloud from './rotateSkills.js';
-console.log('cloud', SVG3DTagCloud);
 
 export default function(conditional) {
   console.log(conditional);
@@ -66,9 +65,9 @@ export default function(conditional) {
     settings.fontColor = "#04A4CC";
     settings.fontWeight = 'bold';
   }
-
+  // let element = $('#tag-cloud').get(0);
+  // return new SVG3DTagCloud(element, settings);
   return new SVG3DTagCloud( document.getElementById( 'tag-cloud'  ), settings );
-  // $('#tag-cloud').svg3DTagCloud(settings);
 };
 
 // https://www.jqueryscript.net/text/3D-Interactive-SVG-Tag-Cloud-Plugin-With-jQuery-SVG-3D-Tag-Cloud.html
