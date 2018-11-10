@@ -1,6 +1,6 @@
 $(document).ready(function () {
+  onScroll();
   $(document).on('scroll', onScroll);
-  
   //smooth scroll
   $('.menu').on('click', function(e) {
     e.preventDefault();
