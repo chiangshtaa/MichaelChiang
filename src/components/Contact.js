@@ -23,7 +23,7 @@ class Contact extends Component {
               <textarea className="text-area input" placeholder="Message"></textarea>
             </div>
 
-            <button type="button">Send</button>
+            <button className="button" type="button">Send</button>
           </div>
         </div>
       </div>

@@ -47,7 +47,6 @@
   float: right;
 }
 
-
 textarea {
   max-width: 100%;
   height: 200px;
@@ -55,3 +54,24 @@ textarea {
   /*max-width: 700px;*/
   resize: auto;
 }
+
+.button {
+  width: 20%;
+  background-color: white;
+  height: 50px;
+  text-align: center;
+  border-radius: 5px;
+  margin: 0 auto;
+  color: black;
+}
+
+button:hover {
+  background-color: #F38A8A;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+
+
+
+
