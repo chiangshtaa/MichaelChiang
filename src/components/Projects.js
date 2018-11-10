@@ -7,12 +7,30 @@ class Projects extends Component {
     return (
       <div className="Projects scroll-container" id="projects">
         <div className="ProjectsMe">
-          <h2>Projects</h2>
-          <div className="projects-carousel">
+          <div className="header">Projects</div>
 
-          </div>
-          <div className="projects-info">
+          <div className="projects-container">
 
+            <div className="projects-carousel">
+
+            </div>
+
+
+            <div className="projects-info">
+              <div className="project-details">
+                <div className="details">Details</div>
+                <div>Name: Pitch Perfect</div>
+                <div>
+                  Description: Pitch Perfect is a tonal analysis learning 
+                  app that allows users to progress through decks of flashcards 
+                  where they can compare their pronunciation of a Mandarin word 
+                  to a native speaker's pronunciation of that word.
+                </div>
+                <div>
+                  Tech Stack: Javascript, React, React-Router, Redux, HTML/CSS, Semantic-UI React, Node, Express, PostreSQL, Amazon S3
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
