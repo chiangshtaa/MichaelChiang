@@ -7,7 +7,24 @@ class Contact extends Component {
     return (
       <div className="Contact scroll-container" id="contact">
         <div className="ContactMe">
-          Contact Me
+          <div className="header">Contact Me</div>
+          <div className="contact-container">
+
+            <div className="contact-info">
+              <input className="input" type="text" placeholder="Your Name"/>
+              <input className="input email" type="text" placeholder="Email Address"/>
+            </div>
+
+            <div className="subject">
+              <input className="input" type="text" placeholder="Subject"/>
+            </div>
+
+            <div className="message">
+              <textarea className="text-area input" placeholder="Message"></textarea>
+            </div>
+
+            <button type="button">Send</button>
+          </div>
         </div>
       </div>
     );
