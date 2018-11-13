@@ -26,77 +26,110 @@ class Projects extends Component {
                     <div className="sb-description">
                       <div className="project-name">Pitch Perfect</div>
                     </div>
-                    <div className="project-details">
-                      Description: Pitch Perfect is a tonal analysis learning 
-                      app that allows users to progress through decks of flashcards 
-                      where they can compare their pronunciation of a Mandarin word 
-                      to a native speaker's pronunciation of that word.
-                    </div>
-                    <div>
-                      Tech Stack: Javascript, React, React-Router, Redux, HTML/CSS, Semantic-UI React, Node, Express, PostreSQL, Amazon S3
+                    <div className="big-container">
+                      <div className="details-container">
+                        <div className="project-details">Description:</div>
+                        <div className="project-info">
+                          Pitch Perfect is a tonal analysis learning 
+                          app that allows users to progress through decks of flashcards 
+                          where they can compare their pronunciation of a Mandarin word 
+                          to a native speaker's pronunciation of that word.
+                        </div>
+                      </div>
+                      <br/>
+                      <div className="details-container">
+                        <div className="project-details">Tech Stack:</div>
+                        <div className="project-info">
+                          Javascript, React, React-Router, Redux, HTML/CSS, Semantic-UI React, Node, Express, PostreSQL, Amazon S3, Heroku
+                        </div>
+                      </div>
                     </div>
                   </li>
+
                   <li className="" >
                     <img src={pic2} alt="image2"/>
                     <div className="sb-description">
-                      <div className="project-name">Honest Entertainer</div>
+                      <div className="project-name">Paired</div>
                     </div>
-                    <div className="project-details">
-                      Description: Pitch Perfect is a tonal analysis learning 
-                      app that allows users to progress through decks of flashcards 
-                      where they can compare their pronunciation of a Mandarin word 
-                      to a native speaker's pronunciation of that word.
+                    <div className="details-container">
+                      <div className="project-details">Description:</div>
+                      <div className="project-info">
+                      Paired is a food app that generates recipes based on 
+                      food ingredient. Users can search using the search bar or by 
+                      taking a photo of an ingredient and Paired will recommend recipes 
+                      that include that food item. Additionally, it also provides wine 
+                      and beer pairings for those recipes.
+                      </div>
                     </div>
-                    <div>
-                      Tech Stack: Javascript, React, React-Router, Redux, HTML/CSS, Semantic-UI React, Node, Express, PostreSQL, Amazon S3
+                    <br/>
+                    <div className="details-container">
+                      <div className="project-details">Tech Stack:</div>
+                      <div className="project-info">
+                        Tech Stack: Javascript, React, HTML/CSS, Node, Express, MongoDB, Heroku
+                      </div>
                     </div>
                   </li>
+
                   <li  className="">
                     <img src={pic3} alt="image3"/>
                     <div className="sb-description">
-                      <div className="project-name">Brave Astronaut</div>
+                      <div className="project-name">Basic Replica of Trello</div>
                     </div>
-                    <div className="project-details">
-                      Description: Pitch Perfect is a tonal analysis learning 
-                      app that allows users to progress through decks of flashcards 
-                      where they can compare their pronunciation of a Mandarin word 
-                      to a native speaker's pronunciation of that word.
+                    <div className="details-container">
+                      <div className="project-details">Description:</div>
+                      <div className="project-info">
+                        This project is my attempt at a replica of Trello.  I built 
+                        this app because I felt like it’s an excellent tool for project management 
+                        in regards to organization and efficiency.  It helped me organize what 
+                        tasks needed to be done and who was working on them at the time.
+                      </div>
                     </div>
-                    <div>
-                      Tech Stack: Javascript, React, React-Router, Redux, HTML/CSS, Semantic-UI React, Node, Express, PostreSQL, Amazon S3
+                    <br/>
+                    <div className="details-container">
+                      <div className="project-details">Tech Stack:</div>
+                      <div className="project-info">
+                        Javascript, React, HTML/CSS
+                      </div>
                     </div>
+
                   </li>
                   <li className="" >
                     <img src={pic4} alt="image4"/>
                     <div className="sb-description">
                       <div className="project-name">Affectionate Decision Maker</div>
                     </div>
-                    <div className="project-details">
-                      Description: Pitch Perfect is a tonal analysis learning 
-                      app that allows users to progress through decks of flashcards 
-                      where they can compare their pronunciation of a Mandarin word 
-                      to a native speaker's pronunciation of that word.
+
+                    <div className="details-container">
+                      <div className="project-details">Description:</div>
+                      <div className="project-info">
+                        Pitch Perfect is a tonal analysis learning 
+                        app that allows users to progress through decks of flashcards 
+                        where they can compare their pronunciation of a Mandarin word 
+                        to a native speaker's pronunciation of that word.
+                      </div>
                     </div>
-                    <div>
-                      Tech Stack: Javascript, React, React-Router, Redux, HTML/CSS, Semantic-UI React, Node, Express, PostreSQL, Amazon S3
+                    <br/>
+                    <div className="details-container">
+                      <div className="project-details">Tech Stack:</div>
+                      <div className="project-info">
+                        Tech Stack: Javascript, React, React-Router, Redux, HTML/CSS, Semantic-UI React, Node, Express, PostreSQL, Amazon S3, Heroku
+                      </div>
                     </div>
                   </li>
                 </ul>
-
-                <div id="shadow" className="shadow"></div>
 
                 <div id="nav-arrows" className="nav-arrows">
                   <a href="#">Next</a>
                   <a href="#">Previous</a>
                 </div>
 
+              </div>
                 <div id="nav-dots" className="nav-dots">
                   <span className="nav-dot-current"></span>
-                  <span className=""></span>
+                  <span></span>
                   <span></span>
                   <span></span>
                 </div>
-              </div>
             </div>
         </div>
       </div>
@@ -105,130 +138,3 @@ class Projects extends Component {
 }
 
 export default Projects;
-
-
-// import './App.css';
-
-// class component
-// class Projects extends Component {
-
-//   constructor(props) {
-//     super(props);
-//     this.state = {
-//       projects: [
-//       {
-//         data: 'Hello',
-//         index: 0
-//       },
-//       {
-//         data: 'Hi',
-//         index: 1
-//       },
-//       {
-//         data: 'Bye',
-//         index: 2
-//       },
-//       {
-//         data: 'Goodbye',
-//         index: 3
-//       }],
-//       currentProject: {
-//         data: 'Hello',
-//         index: 0
-//       }
-//     }
-//   };
-
-//   nextProject() {
-//     const newIndex = this.state.currentProject.index+1;
-//     this.setState({
-//       currentProject: this.state.projects[newIndex]
-//     }, console.log(this.state));
-//   }
-
-//   prevProject() {
-//     const newIndex = this.state.currentProject.index-1;
-//     this.setState({
-//       currentProject: this.state.projects[newIndex]
-//     })
-//   }
-
-//   render() {
-//     const { projects, currentProject } = this.state;
-//     return (
-//       <div className="App">
-
-//         <button 
-//           onClick={() => this.nextProject()} 
-//           disabled={currentProject.index === this.state.projects.length-1}>
-//           Next
-//         </button>
-//         <button 
-//           onClick={() => this.prevProject()} 
-//           disabled={currentProject.index === 0}>
-//           Prev
-//         </button>
-
-//         <div className="page">
-//             <section>
-//                 <h1>Image slideshow React tutorial.</h1>
-//             </section>
-
-//             <div className="col">
-//               <div className={`cards-slider active-slide-${currentProject.index}`}>
-//                 <div className="cards-slider-wrapper" style={{
-//                   'transform': `translateX(-${currentProject.index*(100/projects.length)}%)`
-//                 }}>
-//                   {
-//                     projects.map((project, i) => <Cards key={i} project={project} />)
-//                   }
-//                 </div>
-//               </div>
-//             </div>
-
-//         </div>
-//       </div>
-//     );
-//   }
-// }
-
-// export default Projects;
-
-
-
-
-// class Projects extends Component {
-//   render() {
-//     return (
-//       <div className="Projects scroll-container" id="projects">
-//         <div className="ProjectsMe">
-//           <div className="header">Projects</div>
-
-//           <div className="projects-container">
-
-//             <div className="projects-carousel">
-
-//             </div>
-
-
-//             <div className="projects-info">
-//               <div className="project-details">
-//                 <div className="details">Details</div>
-//                 <div>Name: Pitch Perfect</div>
-//                 <div>
-//                   Description: Pitch Perfect is a tonal analysis learning 
-//                   app that allows users to progress through decks of flashcards 
-//                   where they can compare their pronunciation of a Mandarin word 
-//                   to a native speaker's pronunciation of that word.
-//                 </div>
-//                 <div>
-//                   Tech Stack: Javascript, React, React-Router, Redux, HTML/CSS, Semantic-UI React, Node, Express, PostreSQL, Amazon S3
-//                 </div>
-//               </div>
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//     );
-//   }
-// }
