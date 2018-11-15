@@ -53,11 +53,12 @@
   /*float: left;*/
   min-width: 100px;
   /*width: 20%;*/
-  color: green;
+  color: black;
+  font-weight: 600;
 }
 
 .project-info {
-  color: red;
+  color: black;
   /*float: left;*/
   /*width: 80%;*/
 }
@@ -67,7 +68,16 @@
 }*/
 
 .big-container {
-  height: auto;
-  overflow: auto;
+ /* height: auto;
+  overflow: auto;*/
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
 }
+
+/*.journey {
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+}*/
 
