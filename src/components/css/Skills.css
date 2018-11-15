@@ -25,8 +25,8 @@
 
 .info-container {
   /*flex: 60%;*/
-  width: 40%;
-  padding-right: 40px;
+  width: 60%;
+  /*padding-right: 40px;*/
   padding-bottom: 20px;
   /*align-items: stretch !important;*/
 }
@@ -40,6 +40,7 @@
 .skills-page-contact {
   display: inline-block;
   color: #F38A8A;
+  padding: 0px;
 }
 
 .end {
@@ -49,14 +50,62 @@
 
 
 .wheel-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   /*display: none;*/
   /*text-align: center;*/
   /*width: 100%;*/
   /*flex: 50%;*/
-  width: 60%;
+  /*width: 60%;*/
   /*align-items: center;*/
   /*min-width: 600px;*/
   /*padding-bottom: 20px;*/
+}
+
+.controls-container {
+  width: 40%;
+  /*position: relative;*/
+}
+
+.controls {
+  position: relative;
+  /*height: 100%;*/
+  width: 90%;
+  /*padding: 45% 45%;*/
+  background-color: #444;
+  border-radius: 5px;
+  padding: 20px;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.switch {
+  /*align-content: center;*/
+ /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;*/
+  margin: 0 auto;
+  display: block;
+  /*padding-bottom: 10px;*/
+  width: 50%;
+  border-radius: 5px;
+  outline: none;
+  /*background-color: #d3d3d3;*/
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.switch:hover {
+  background-color: white;
+  opacity: 1;
+}
+
+.sphere {
+  width: 60%;
 }
 
 .skills-wheel {
@@ -102,5 +151,54 @@ image {
 text {
   font-size: 1.25vw;
 }
+
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;   
+  /*background: #d3d3d3;*/
+  background-color: white;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%; 
+  background: #4CAF50;
+  /*background-color: white;*/
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  /*background: #4CAF50;*/
+  background-color: white;
+  cursor: pointer;
+}
+
+.slider-description {
+  padding: 15px 0px 40px 0px;
+  text-align: center;
+  color: white;
+}
+
+.radius {
+  padding: 15px 0px 10px 0px;
+}
+
 
 

@@ -1,15 +1,10 @@
 import React, { Component } from 'react';
-import { Carousel, Item } from 'react-bootstrap';
 import './css/Projects.css';
-// import Cards from './Cards';
 
 import pic from './css/img/snowboard-mountain.jpg';
 import pic2 from './css/img/tictactoe.jpg';
 import pic3 from './css/img/snowboard-white.jpeg';
 import pic4 from './css/img/profilePic.jpeg';
-
-// import './css/swiper.min.css';
-// import './css/Projects2.css';
 
 class Projects extends Component {
   render() {

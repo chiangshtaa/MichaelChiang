@@ -10,7 +10,9 @@ class Skills extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      icon: false
+      icon: false,
+      radius: 5,
+      iconSize: 5
     }
   }
 
@@ -24,6 +26,19 @@ class Skills extends Component {
     rotate(next);
     this.setState({
       icon: next
+    })
+  }
+
+  changeIconSize(e) {
+    console.log(e.target.value);
+    this.setState({
+      iconSize: e.target.value
+    })
+  }
+
+  changeRadius(e) {
+    this.setState({
+      radius: e.target.value
     })
   }
 
@@ -49,6 +64,7 @@ class Skills extends Component {
                   of mine and I am confident that both my technical skills and work 
                   ethics will be of value to your company.
                 </div>
+                <br/>
                 <div>
                   <span>Please check out my </span>
                   <a href="https://www.linkedin.com/in/michaelchiang3/">
@@ -58,18 +74,33 @@ class Skills extends Component {
                   </a>
                   <span> profile or </span>
                   <div id="contactMenu" className="menu skills-page-contact">
-                    contact 
+                    contact
                   </div>
                   <span className="end">&nbsp;me!</span>
                 </div></div>
-              <div className="switch">
-                <button type="button" onClick={() => this.switch()}>Click Me!</button>
-              </div>
-            </div>
-            <div className="wheel-container">
-              <div id="tag-cloud"></div>
             </div>
           </div>
+
+          <div className="wheel-container">
+
+            <div className="controls-container">
+              <div className="controls">
+                <button className="switch" type="button" onClick={() => this.switch()}>Try Me!</button>
+                <br/>
+                <br/>
+                <input className="slider" step="1" type="range" min="0" max="10" value={this.state.iconSize} onChange={(e) => this.changeIconSize(e)}/>
+                <div className="slider-description">Icon Size</div>
+                <input className="slider" step="1" type="range" min="0" max="10" value={this.state.radius} onChange={(e) => this.changeRadius(e)}/>
+                <div className="slider-description radius">Radius</div>
+              </div>
+            </div>
+
+            <div className="sphere">
+              <div id="tag-cloud"></div>
+            </div>
+
+          </div>
+
         </div>
       </div>
     );
