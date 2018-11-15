@@ -1,17 +1,20 @@
-// import $ from 'jquery';
+import $ from 'jquery';
 
 import SVG3DTagCloud from './rotateSkills.js';
 
-export default function(conditional) {
-  console.log(conditional);
+export default function(conditional, iconSize = 50, fontSize = 24, radiusLength = '75%') {
 
+  // console.log(conditional);
+  // console.log(iconSize);
+  console.log(fontSize);
+  // console.log(radiusLength);
   var entries = ['css3', 'github', 'html5', 'javascript', 'jest', 'jquery', 'mongoDB', 'nodeJS', 'postgreSQL', 'react', 'redux'];
   entries = entries.map((entry) => {
     return {
       tooltip: entry,
       image: `./skills/${entry}.png`,
-      width: '50',
-      height: '50',
+      width: iconSize,
+      height: iconSize,
     }
   })
 
@@ -19,7 +22,7 @@ export default function(conditional) {
     entries: entries,
     width: '100%', // width of tag cloud
     height: '100%', // height of tag cloud
-    radius: '75%', // radius of tag cloud
+    radius: radiusLength, // radius of tag cloud
     radiusMin: 75,
     bgDraw: true, // background
     bgColor: '#fff', // background color
@@ -61,10 +64,12 @@ export default function(conditional) {
     })
     settings.entries = entries;
     settings.bgColor = '#444';
-    settings.fontSize = '24';
+    settings.fontSize = fontSize;
     settings.fontColor = "#04A4CC";
     settings.fontWeight = 'bold';
   }
+
+  // $( '#tag-cloud' ).svg3DTagCloud( settings );
   // let element = $('#tag-cloud').get(0);
   // return new SVG3DTagCloud(element, settings);
   return new SVG3DTagCloud( document.getElementById( 'tag-cloud'  ), settings );

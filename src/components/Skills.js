@@ -11,8 +11,10 @@ class Skills extends Component {
     super(props);
     this.state = {
       icon: false,
-      radius: 5,
-      iconSize: 5
+      radius: 75,
+      iconSize: 50,
+      fontSize: 24,
+      title: 'Icon Size'
     }
   }
 
@@ -22,24 +24,37 @@ class Skills extends Component {
 
   switch() {
     $('svg').remove();
+    let newTitle = this.state.title === 'Icon Size' ? 'Font Size' : 'Icon Size';
     let next = !this.state.icon;
-    rotate(next);
+    rotate(next, this.state.iconSize, this.state.fontSize, this.state.radius + '%');
     this.setState({
-      icon: next
+      icon: next,
+      title: newTitle
     })
   }
 
   changeIconSize(e) {
-    console.log(e.target.value);
+    $('svg').remove();
+    let newIconSize = e.target.value;
     this.setState({
-      iconSize: e.target.value
-    })
+      iconSize: newIconSize
+    }, () => rotate(this.state.icon, this.state.iconSize, this.state.fontSize, this.state.radius + '%'))
+  }
+
+  changeFontSize(e) {
+    $('svg').remove();
+    let newFontSize = e.target.value;
+    this.setState({
+      fontSize: newFontSize
+    }, () => rotate(this.state.icon, this.state.iconSize, this.state.fontSize, this.state.radius + '%'))
   }
 
   changeRadius(e) {
+    $('svg').remove();
+    let newRadius = e.target.value;
     this.setState({
-      radius: e.target.value
-    })
+      radius: newRadius
+    }, () => rotate(this.state.icon, this.state.iconSize, this.state.fontSize, this.state.radius + '%'))
   }
 
   render() {
@@ -88,9 +103,27 @@ class Skills extends Component {
                 <button className="switch" type="button" onClick={() => this.switch()}>Try Me!</button>
                 <br/>
                 <br/>
-                <input className="slider" step="1" type="range" min="0" max="10" value={this.state.iconSize} onChange={(e) => this.changeIconSize(e)}/>
-                <div className="slider-description">Icon Size</div>
-                <input className="slider" step="1" type="range" min="0" max="10" value={this.state.radius} onChange={(e) => this.changeRadius(e)}/>
+                { !this.state.icon ? 
+                  <input 
+                    className="slider icon" 
+                    step="10" 
+                    type="range" 
+                    min="0" 
+                    max="100" 
+                    value={this.state.iconSize} 
+                    onChange={(e) => this.changeIconSize(e)}/> :
+                  <input 
+                  className="slider font" 
+                  step="2" 
+                  type="range" 
+                  min="12" 
+                  max="36" 
+                  value={this.state.fontSize} 
+                  onChange={(e) => this.changeFontSize(e)}/>
+                }
+                <div className="slider-description">{this.state.title}</div>
+
+                <input className="slider" step="5" type="range" min="20" max="75" value={this.state.radius} onChange={(e) => this.changeRadius(e)}/>
                 <div className="slider-description radius">Radius</div>
               </div>
             </div>
