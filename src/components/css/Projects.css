@@ -15,7 +15,8 @@
 }
 
 .wrapper-container {
-  background-color: #ccc;
+  /*background-color: #ccc;*/
+  background-color: #e9e9ea;
   padding: 50px;
   border-radius: 5px;
   position: relative;

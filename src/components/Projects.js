@@ -3,8 +3,8 @@ import './css/Projects.css';
 
 import PitchPerfect from './css/img/PitchPerfect.jpeg';
 import Paired from './css/img/Paired.png';
-// import SpotifyGo from './css/img/SpotifyGo.jpeg';
-// import Trello from './css/img/Trello.jpeg';
+import Trello from './css/img/Trello.png';
+import CryptoApp from './css/img/CryptoApp.png';
 
 class Projects extends Component {
   render() {
@@ -68,7 +68,7 @@ class Projects extends Component {
                   </li>
 
                   <li  className="">
-                    <img src={PitchPerfect} alt="image3"/>
+                    <img src={Trello} alt="image3"/>
                     <div className="sb-description">
                       <div className="project-name">Basic Replica of Trello</div>
                     </div>
@@ -92,25 +92,24 @@ class Projects extends Component {
                     </div>
                   </li>
                   <li className="" >
-                    <img src={Paired} alt="image4"/>
+                    <img src={CryptoApp} alt="image4"/>
                     <div className="sb-description">
-                      <div className="project-name">Affectionate Decision Maker</div>
+                      <div className="project-name">Crypto</div>
                     </div>
                     <div className="big-container">
                       <div className="details-container">
                         <div className="project-details">Description:</div>
                         <div className="project-info">
-                          Pitch Perfect is a tonal analysis learning 
-                          app that allows users to progress through decks of flashcards 
-                          where they can compare their pronunciation of a Mandarin word 
-                          to a native speaker's pronunciation of that word.
+                          Crypto is a simple app that generates basic information about 
+                          the current top 25 coins.  I utilized coinmarketcap's API to 
+                          obtain the information.
                         </div>
                       </div>
                       <br/>
                       <div className="details-container">
                         <div className="project-details">Tech Stack:</div>
                         <div className="project-info">
-                          Tech Stack: Javascript, React, React-Router, Redux, HTML/CSS, Semantic-UI React, Node, Express, PostreSQL, Amazon S3, Heroku
+                          Tech Stack: Javascript, React, HTML/CSS, Node, Express, RESTful API
                         </div>
                       </div>
                     </div>
