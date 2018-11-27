@@ -3,6 +3,7 @@
   vertical-align: middle;
   font-family: 'Montserrat', 'sans-serif';
   font-size: 14px;
+  background-color: #F1F1F2;
 }
 
 /*@keyframes float {
@@ -28,6 +29,8 @@
 
 h3 {
   font-weight: 800;
+  color: #4a808f;
+  /*color: #19647E;*/
 }
 
 .nav {
@@ -39,12 +42,17 @@ h3 {
   display: block;
   padding: 12px 0px;
   cursor: pointer;
+  /*color: white;*/
+
 }
 
 .active {
-  color: #F38A8A;
+/*  color: #F38A8A;
   border-bottom: 2px solid #F38A8A;
-  border-top: 2px solid #F38A8A;
+  border-top: 2px solid #F38A8A;  */
+  color: #19647E;
+  border-bottom: 2px solid #4a808f;
+  border-top: 2px solid #4a808f;
 }
 
 @media (max-width: 982px) {

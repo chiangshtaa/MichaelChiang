@@ -66,6 +66,7 @@ export default function(conditional, iconSize = 50, fontSize = 24, radiusLength 
     settings.bgColor = '#444';
     settings.fontSize = fontSize;
     settings.fontColor = "#04A4CC";
+    // settings.fontColor = '#4a808f';
     settings.fontWeight = 'bold';
   }
 

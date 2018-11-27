@@ -8,7 +8,7 @@ class Home extends Component {
       <div className="Home scroll-container" id="home">
         <div className="me">
           <h1> Michael Chiang </h1>
-          <h3> Web Developer </h3>
+          <h2> Web Developer </h2>
         </div>
       </div>
     );
