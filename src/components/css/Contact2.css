@@ -97,7 +97,7 @@ input {
 .contact-info textarea:valid ~ label {
   top: 0px;
   left: 0px;
-  color: #4a808f;
+  color: #1e836c;
   font-size: 12px;
   font-weight: bold;
 }
@@ -106,7 +106,7 @@ input {
 .contact-info textarea:focus,
 .contact-info input:valid, 
 .contact-info textarea:valid {
-  border-bottom: 2px solid #4a808f;
+  border-bottom: 2px solid #1e836c;
 }
 
 .contact-info input[type="submit"] {
@@ -120,11 +120,10 @@ input {
   /*border: 2px solid black;*/
   color: black;
   outline: none;
-  
 }
 
 .contact-info input[type="submit"]:hover {
-  background-color: #4a808f;
+  background-color: #1e836c;
   color: white;
   transition: all 0.3s ease;
 }

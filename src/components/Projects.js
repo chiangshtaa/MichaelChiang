@@ -61,7 +61,7 @@ class Projects extends Component {
                       <div className="details-container">
                         <div className="project-details">Tech Stack:</div>
                         <div className="project-info">
-                          Tech Stack: Javascript, React, HTML/CSS, Node, Express, MongoDB, Heroku
+                          Javascript, React, HTML/CSS, Node, Express, MongoDB, Heroku
                         </div>
                       </div>
                     </div>
@@ -109,7 +109,7 @@ class Projects extends Component {
                       <div className="details-container">
                         <div className="project-details">Tech Stack:</div>
                         <div className="project-info">
-                          Tech Stack: Javascript, React, HTML/CSS, Node, Express, RESTful API
+                          Javascript, React, HTML/CSS, Node, Express, RESTful API
                         </div>
                       </div>
                     </div>

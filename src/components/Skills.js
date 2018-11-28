@@ -83,7 +83,7 @@ class Skills extends Component {
                 <div>
                   <span>Please check out my </span>
                   <a href="https://www.linkedin.com/in/michaelchiang3/">
-                    <span className=".linkedIn">
+                    <span className="linkedIn">
                       LinkedIn
                     </span>
                   </a>
