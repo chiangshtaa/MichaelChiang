@@ -29,7 +29,8 @@
 
 h3 {
   font-weight: 800;
-  color: #4a808f;
+  /*color: #4a808f;*/
+  color: #1e836c;
   /*color: #19647E;*/
 }
 
@@ -50,9 +51,13 @@ h3 {
 /*  color: #F38A8A;
   border-bottom: 2px solid #F38A8A;
   border-top: 2px solid #F38A8A;  */
-  color: #19647E;
-  border-bottom: 2px solid #4a808f;
+  /*color: #19647E;*/
+  color: #1e836c;
+/*  border-bottom: 2px solid #4a808f;
   border-top: 2px solid #4a808f;
+*/  
+  border-bottom: 2px solid #1e836c;
+  border-top: 2px solid #1e836c;
 }
 
 @media (max-width: 982px) {
