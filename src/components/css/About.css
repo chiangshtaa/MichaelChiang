@@ -42,9 +42,12 @@
   border-radius: 5px;
 }
 
-.tictactoe-container {
+.container-2048 {
   text-align: center;
   flex: 40%;
+  background-color: white;
+  border-radius: 5px;
+  padding-bottom: 20px;
 }
 
 .tictactoe {
@@ -54,5 +57,32 @@
   border-radius: 5px;
 }
 
+.rules {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+/*  margin-left: 15px;
+  margin-right: 15px;*/
+  margin: 0 auto;
+  margin-top: 15px;
+  width: 370px;
+  /*text-align: center;*/
+}
+
+.how-to {
+  min-width: 110px;
+  /*width: 20%;*/
+  color: black;
+  font-weight: 600;
+}
+
+.instructions {
+  text-align: left;
+}
+
+.win {
+  color: rgba(235, 67, 35, 0.75);
+  display: inline-block;
+}
 
 

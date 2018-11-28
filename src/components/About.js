@@ -57,9 +57,17 @@ class About2 extends Component {
                 </div>
               </div>
             </div>
-            <div className="tictactoe-container column">
+            <div className="container-2048">
               {<Board2048/>}
               {/*<img className="tictactoe" src={ticTacToe} alt="tictactoe" />*/}
+
+              <div className="rules">
+                <div className="how-to">How To Play: </div>
+                <div className="instructions">
+                   When two tiles with the same number touch, they'll merge into one! 
+                   Reach <div className="win">2048</div> and you win!
+                </div>
+              </div>
             </div>
           </div>
         </div>
