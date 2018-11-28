@@ -4,7 +4,8 @@ import ReactDOM from 'react-dom';
 
 //基础大小参数
 var cellSpace = 5;
-var cellSideLength = 100;
+// var cellSideLength = 100;
+var cellSideLength = 80;
 
 function getPos(i) {
     return cellSpace + i * (cellSpace * 2 + cellSideLength);

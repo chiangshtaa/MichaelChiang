@@ -20,8 +20,9 @@ class Board2048 extends React.Component {
     }
 
     handleKeyDown(event) {
-        event.preventDefault();
+        // event.preventDefault();
         if (event.keyCode >= 37 && event.keyCode <= 40) {
+            event.preventDefault();
             var direction = event.keyCode - 37;
             var gd = this.state.gameData.move(direction);
             this.setState({
