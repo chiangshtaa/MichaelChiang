@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import './css/Skills.css';
 
 import rotate from './rotate.js';
-import { rotateSkills } from './rotateSkills.js';
+// import { rotateSkills } from './rotateSkills.js';
 import $ from 'jquery';
 
 class Skills extends Component {

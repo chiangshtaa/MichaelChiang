@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
 
+import Board2048 from './Board2048.js';
 import './css/About.css';
 
-import ticTacToe from './css/img/tictactoe.jpg';
+// import ticTacToe from './css/img/tictactoe.jpg';
 
 class About2 extends Component {
   render() {
     return (
       <div className="About scroll-container" id="about">
         <div className="AboutMe">
-          <div className="header">About Me</div>
+          <div className="header">My Story</div>
           <div className="about-container">
             <div className="info2 column">
               <div className="journey">
@@ -57,7 +58,8 @@ class About2 extends Component {
               </div>
             </div>
             <div className="tictactoe-container column">
-              <img className="tictactoe" src={ticTacToe} alt="tictactoe" />
+              {<Board2048/>}
+              {/*<img className="tictactoe" src={ticTacToe} alt="tictactoe" />*/}
             </div>
           </div>
         </div>

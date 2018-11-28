@@ -117,8 +117,8 @@ class Projects extends Component {
                 </ul>
 
                 <div id="nav-arrows" className="nav-arrows">
-                  <a href="#">Next</a>
-                  <a href="#">Previous</a>
+                  <a href="#next">Next</a>
+                  <a href="#previous">Previous</a>
                 </div>
 
               </div>
