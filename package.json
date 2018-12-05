@@ -1,21 +1,21 @@
 {
-  "name": "portfolio",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "aws-cli-js": "^2.0.4",
-    "aws-sdk": "^2.310.0",
-    "jquery": "^3.3.1",
-    "less": "^3.8.1",
-    "react": "^16.4.2",
-    "react-bootstrap": "^0.32.4",
-    "react-dom": "^16.4.2",
-    "react-scripts": "1.1.5"
-  },
+  "name": "Michael-Chiang-Portfolio",
+  "version": "1.0.0",
+  "description": "Michael Chiang Portfolio",
+  "main": "index.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  }
+    "start": "nodemon index.js",
+    "heroku-postbuild": "cd client && npm install && npm run build"
+  },
+  "dependencies": {
+    "express": "^4.15.3",
+    "nodemon": "^1.18.6",
+    "request": "^2.88.0"
+  },
+  "engines": {
+    "node": "10.8.0"
+  },
+  "keywords": [],
+  "author": "Michael Chiang",
+  "license": "MIT"
 }

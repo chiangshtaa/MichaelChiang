@@ -1,10 +1,24 @@
 import React, { Component } from 'react';
+import './css/Contact2.css';
+const axios = require('axios');
 
 // import './css/Contact.css';
 
-import './css/Contact2.css';
 
 class Contact extends Component {
+  componentDidMount() {
+    axios.get('/email', {
+      params: {
+        start: 'hello',
+        end: 'there'
+      }
+    })
+    .then((res) => {
+      console.log('response', res);
+    })
+    .catch((err) => console.log(err));
+  }
+
   render() {
     return (
       <div className="Contact scroll-container" id="contact">
