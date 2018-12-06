@@ -6,18 +6,39 @@ const axios = require('axios');
 
 
 class Contact extends Component {
-  componentDidMount() {
-    axios.get('/email', {
-      params: {
-        start: 'hello',
-        end: 'there'
+
+  handleSubmit(e) {
+    e.preventDefault();
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const subject = document.getElementById('subject').value;
+    const message = document.getElementById('message').value;
+
+    axios({
+      method: "POST",
+      url: '/send',
+      data: {
+        name: name,
+        email: email,
+        subject: subject,
+        message: message
       }
     })
     .then((res) => {
-      console.log('response', res);
+      console.log('res', res);
+      if (res.data.msg === 'success') {
+        alert("Message sent!");
+        this.resetForm();
+      } else {
+        alert("Message failed to send");
+      }
     })
-    .catch((err) => console.log(err));
   }
+
+  resetForm() {
+    document.getElementById('contact-form').reset();
+  }
+
 
   render() {
     return (
@@ -27,28 +48,29 @@ class Contact extends Component {
           <div className="contact-container">
 
             <div className="contact-info">
-              <form>
+              <form id="contact-form" method="POST" action="send" onSubmit={(e) => this.handleSubmit(e)}>
                 <div className="contacter-info">
                   <div className="name">
-                    <input type="text" name="" required/>
+                    <input type="text" name="name" required id="name"/>
                     <label>Name</label>
                   </div>
 
                   <div className="email">
-                    <input type="text" name="" required/>
+                    <input type="text" name="email" required id="email"/>
                     <label>Email</label>
                   </div>
                 </div>
 
                 <div>
-                  <input type="text" name="" required/>
+                  <input type="text" name="subject" required id="subject"/>
                   <label>Subject</label>
                 </div>
                 <div>
-                  <textarea required></textarea>
+                  <textarea required name="message" id="message"></textarea>
                   <label>Message</label>
                 </div>
 
+              {/*<button type="submit"> Submit </button>*/}
                 <input type="submit" name="" value="Send"/>
               </form>
             </div>
