@@ -6,8 +6,6 @@ const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 const app = express();
 
-const { EMAIL, PASS } = require('./config.js');
-
 // Serve static files from the React app
 // app.use(express.static(path.join(__dirname, 'client/public')));
 app.use(express.static(path.join(__dirname, 'client/build')));
@@ -37,8 +35,8 @@ app.post('/send', (req, res) => {
     port: 587,
     // secure: false, // true for 465, false for other ports
     auth: {
-        user: EMAIL, // generated ethereal user
-        pass: PASS  // generated ethereal password
+        user: 'xooqptmk7e2hdhzv@ethereal.email', // generated random ethereal user
+        pass: 'tZARjFakEWntq8rr5q'  // generated random ethereal password
     },
     // tls:{
     //   rejectUnauthorized:false
@@ -48,9 +46,9 @@ app.post('/send', (req, res) => {
   // setup email data with unicode symbols
   let mailOptions = {
       from: `"Nodemailer Contact" ${req.body.email}`, // sender address
-      to: EMAIL, // list of receivers
+      to: 'xooqptmk7e2hdhzv@ethereal.email', // list of receivers
       subject: 'From Portfolio', // Subject line
-      text: 'Hello world?', // plain text body
+      text: 'Hello world', // plain text body
       html: output // html body
   };
 
@@ -62,8 +60,8 @@ app.post('/send', (req, res) => {
           msg: 'fail'
         })
       } else {
-        console.log('Message sent: %s', info.messageId);   
-        console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
+        // console.log('Message sent: %s', info.messageId);   
+        // console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
         res.json({
           msg: 'success'
         })
