@@ -1,11 +1,24 @@
 import React, { Component } from 'react';
 import './css/Contact2.css';
+import NotificationSystem from 'react-notification-system';
 const axios = require('axios');
 
 // import './css/Contact.css';
+// let notificationSystem = React.createRef();
 
+  // addNotification = event => {
+  //   event.preventDefault();
+  //   const notification = this.notificationSystem.current;
+  //   notification.addNotification({
+  //     message: 'Notification message',
+  //     level: 'success'
+  //   });
+  // };
 
 class Contact extends Component {
+  constructor(props) {
+    super(props);
+  }
 
   handleSubmit(e) {
     e.preventDefault();
@@ -25,15 +38,26 @@ class Contact extends Component {
       }
     })
     .then((res) => {
-      console.log('res', res);
       if (res.data.msg === 'success') {
-        alert("Message sent!");
+        this.addNotification();
         this.resetForm();
       } else {
         alert("Message failed to send");
       }
     })
   }
+
+  notificationSystem = React.createRef();
+
+  addNotification() {
+    const notification = this.notificationSystem.current;
+    notification.addNotification({
+      message: 'Message successfully sent!',
+      level: 'success',
+      position: 'tc',
+      // autoDismiss: 0
+    });
+  };
 
   resetForm() {
     document.getElementById('contact-form').reset();
@@ -74,11 +98,25 @@ class Contact extends Component {
                 <input type="submit" name="" value="Send"/>
               </form>
             </div>
-
+            <NotificationSystem ref={this.notificationSystem} style={style}/>
           </div>
         </div>
       </div>
     );
+  }
+}
+
+const style = {
+  NotificationItem: { // Override the notification item
+    DefaultStyle: { // Applied to every notification, regardless of the notification level
+      margin: '10px 5px 2px 1px'
+    },
+
+    success: { // Applied only to the success notification item
+      color: '#1e836c',
+      borderTop: '2px solid #1e836c',
+      textAlign: 'center',
+    }
   }
 }
 
