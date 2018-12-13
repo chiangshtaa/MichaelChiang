@@ -16,20 +16,22 @@
 }
 
 .skills-container {
-  display: flex;
+/*  display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: wrap;*/
   /*justify-content: center;*/
   /*align-items: center;*/
   /*text-align: center;*/
+  width: 40%;
 }
 
 .info-container {
   /*flex: 60%;*/
-  width: 80%;
+  /*width: 40%;*/
   /*padding-right: 40px;*/
   padding-bottom: 20px;
   /*align-items: stretch !important;*/
+  margin-right: 20px;
 }
 
 .skills-info {
@@ -66,21 +68,22 @@
 }
 
 .controls-container {
-  width: 40%;
-  /*position: relative;*/
+  /*width: 40%;*/
+  position: relative;
 }
 
 .controls {
   position: relative;
   /*height: 100%;*/
-  width: 90%;
+  /*width: 90%;*/
   /*padding: 45% 45%;*/
   background-color: #444;
   border-radius: 5px;
   padding: 20px;
-  top: 25%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  /*top: 50%;*/
+  /*left: 50%;*/
+  /*transform: translate(-50%, -50%);*/
+  margin-top: 20px;
 }
 
 .switch {
@@ -107,6 +110,15 @@
 }
 
 .sphere {
+  /*width: 60%;*/
+  /*width: 100%;*/
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: relative;
+}
+
+.sphere-container {
   width: 60%;
 }
 
