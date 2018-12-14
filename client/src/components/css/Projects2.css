@@ -3,10 +3,19 @@
   margin: 0px;
 }
 
-@media (min-width: 992px) {
+/*@media (min-width: 992px) {
   .col-md-6 {
     width: 50%;
     float: left;
+  }
+}*/
+
+@media screen and (max-width: 1320px) and (min-width: 961px) {
+  .col-md-6 {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    align-items: stretch;
   }
 }
 
@@ -62,3 +71,13 @@ figure {
   margin-right: 8px;
   font-size: 10px;
 }
+
+.col-4 {
+  width: 50%;
+}
+
+
+
+
+
+
