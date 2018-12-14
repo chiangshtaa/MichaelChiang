@@ -83,3 +83,24 @@ h3 {
 }
 
 */
+
+.fab {
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.social-media {
+  text-align: center;
+  margin-left: 7px;
+}
+
+.fa-linkedin-in {
+  color: #0077B5;
+}
+
+.fa-github {
+  color: black;
+}
+
+
+
