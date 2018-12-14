@@ -41,6 +41,25 @@ class Projects extends Component {
     }
   }
 
+  displayProjects(project) {
+    return (
+      <div className="single-box">
+        <figure><img src={project.image} alt=""/></figure>
+        <h3>{project.name}</h3>
+        <p>{project.description}</p>
+        <ul>
+          {
+            project.stack.map((tech) => {
+              return (
+                <li>{tech}</li>
+              )
+            })
+          }
+        </ul>
+      </div>
+    )
+  }
+
   render() {
     return (
       <div className="Projects scroll-container" id="projects">
@@ -50,46 +69,12 @@ class Projects extends Component {
             <div className="row blog-list">
               <div className="col-md-6">
                 {
-                  this.state.projects.slice(0, 2).map((project) => {
-                    return (
-                      <div className="single-box">
-                        <figure><img src={project.image} alt=""/></figure>
-                        <h3>{project.name}</h3>
-                        <p>{project.description}</p>
-                        <ul>
-                          {
-                            project.stack.map((tech) => {
-                              return (
-                                <li>{tech}</li>
-                              )
-                            })
-                          }
-                        </ul>
-                      </div>
-                    )
-                  })
+                  this.state.projects.slice(0, 2).map((project) => this.displayProjects(project))
                 }
               </div>
               <div className="col-md-6">
                 {
-                  this.state.projects.slice(2, 4).map((project) => {
-                    return (
-                      <div className="single-box">
-                        <figure><img src={project.image} alt=""/></figure>
-                        <h3>{project.name}</h3>
-                        <p>{project.description}</p>
-                        <ul>
-                          {
-                            project.stack.map((tech) => {
-                              return (
-                                <li>{tech}</li>
-                              )
-                            })
-                          }
-                        </ul>
-                      </div>
-                    )
-                  })
+                  this.state.projects.slice(2, 4).map((project) => this.displayProjects(project))
                 }
               </div>
             </div>
