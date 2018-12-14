@@ -1,0 +1,15 @@
+.footer {
+  background: #e9e9ea;
+  padding: 20px 60px;
+  display: block;
+  margin-top: 40px;
+}
+
+.copyright {
+  width: 100%;
+}
+
+.copyright p {
+  font-size: 12px;
+  margin: 0 auto;
+}

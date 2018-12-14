@@ -7,6 +7,7 @@ import Skills from './components/Skills';
 import Contact from './components/Contact';
 
 import Projects2 from './components/Projects2';
+import Footer from './components/Footer';
 
 import './App.css';
 
@@ -25,6 +26,7 @@ class App extends Component {
           <Projects2 />
           <Skills />
           <Contact />
+          <Footer />
         </div>
       </div>
     );
