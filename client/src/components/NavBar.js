@@ -54,8 +54,8 @@ class Navbar extends Component {
           <div id="skillsMenu" className="menu"> Skills </div>
           <div id="contactMenu" className="menu"> Contact </div>
           <div className="social-media">
-            <a href="https://www.linkedin.com/in/michaelchiang3/"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://github.com/chiangshtaa"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/michaelchiang3/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/chiangshtaa" target="_blank"><i class="fab fa-github"></i></a>
           </div>
         </div>
       </div>
