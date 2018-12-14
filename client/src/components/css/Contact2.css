@@ -174,7 +174,15 @@ input {
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
 }
 
+.more-info {
+  margin-top: 40px;
+}
 
+@media (min-width: 992px) {
+  .col-md-4 {
+    width: 33%;
+  }
+}
 
 
 
