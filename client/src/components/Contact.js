@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import './css/Contact2.css';
 import NotificationSystem from 'react-notification-system';
-const axios = require('axios');
+import GoogleMap from './GoogleMap.js';
+
+import axios from 'axios';
+// const axios = require('axios');
 
 // import './css/Contact.css';
 // let notificationSystem = React.createRef();
@@ -70,35 +73,40 @@ class Contact extends Component {
         <div className="ContactMe">
           <div className="header">Contact Me</div>
           <div className="contact-container">
+            <div className="email-container">
 
-            <div className="contact-info">
-              <form id="contact-form" method="POST" action="send" onSubmit={(e) => this.handleSubmit(e)}>
-                <div className="contacter-info">
-                  <div className="name">
-                    <input type="text" name="name" required id="name"/>
-                    <label>Name</label>
+              <div className="contact-info">
+                <form id="contact-form" method="POST" action="send" onSubmit={(e) => this.handleSubmit(e)}>
+                  <div className="contacter-info">
+                    <div className="name">
+                      <input type="text" name="name" required id="name"/>
+                      <label>Name</label>
+                    </div>
+
+                    <div className="email">
+                      <input type="text" name="email" required id="email"/>
+                      <label>Email</label>
+                    </div>
                   </div>
 
-                  <div className="email">
-                    <input type="text" name="email" required id="email"/>
-                    <label>Email</label>
+                  <div>
+                    <input type="text" name="subject" required id="subject"/>
+                    <label>Subject</label>
                   </div>
-                </div>
+                  <div>
+                    <textarea required name="message" id="message"></textarea>
+                    <label>Message</label>
+                  </div>
 
-                <div>
-                  <input type="text" name="subject" required id="subject"/>
-                  <label>Subject</label>
-                </div>
-                <div>
-                  <textarea required name="message" id="message"></textarea>
-                  <label>Message</label>
-                </div>
-
-              {/*<button type="submit"> Submit </button>*/}
-                <input type="submit" name="" value="Send"/>
-              </form>
+                {/*<button type="submit"> Submit </button>*/}
+                  <input type="submit" name="" value="Send"/>
+                </form>
+              </div>
+              <NotificationSystem ref={this.notificationSystem} style={style}/>
             </div>
-            <NotificationSystem ref={this.notificationSystem} style={style}/>
+            <div className="map">
+              <GoogleMap />
+            </div>
           </div>
         </div>
       </div>
