@@ -8,7 +8,7 @@ export default function(conditional, iconSize = 50, fontSize = 24, radiusLength 
   // console.log(iconSize);
   console.log(fontSize);
   // console.log(radiusLength);
-  var entries = ['css3', 'github', 'html5', 'javascript', 'jest', 'jquery', 'mongoDB', 'nodeJS', 'postgreSQL', 'react', 'redux', 'mocha'];
+  var entries = ['css3', 'github', 'html5', 'javascript', 'jest', 'jquery', 'mongoDB', 'nodeJS', 'postgreSQL', 'react', 'redux', 'mocha', 'heroku', 'bootstrap', 'npm', 'express', 'angular', 'backbone'];
   entries = entries.map((entry) => {
     return {
       tooltip: entry,
@@ -27,10 +27,10 @@ export default function(conditional, iconSize = 50, fontSize = 24, radiusLength 
     bgDraw: true, // background
     bgColor: '#fff', // background color
     opacityOver: 1.00, // opacity when hovered
-    opacityOut: 0.2, // opacity of others when one is hovered
+    opacityOut: 0.1, // opacity of others when one is hovered
     opacitySpeed: 10, 
     fov: 800, // how content is presented
-    speed: 1, // animation speed
+    speed: 0.7, // animation speed
 
     fontFamily: 'Montserrat, Arial, sans-serif',
     fontSize: '15',
