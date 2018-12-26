@@ -50,7 +50,7 @@ export default function(conditional, iconSize = 50, fontSize = 24, radiusLength 
     tooltipFontToUpperCase: false,
     tooltipTextAnchor: 'left',
     tooltipDiffX: 0,
-    tooltipDiffY: 0
+    tooltipDiffY: 5
   };
 
   if (conditional) {
