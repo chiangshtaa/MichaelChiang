@@ -149,6 +149,14 @@ rect {
   y: 2.5%;
 }
 
+circle {
+  stroke: black;
+  stroke-width: 5px;
+  cx: 50%;
+  cy: 50%;
+  r: 47.5%;
+}
+
 /*svg {
   top: 5px;
   bottom: 5px;

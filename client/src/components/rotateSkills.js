@@ -107,9 +107,12 @@ function SVG3DTagCloud( element, params ) {
 
         if ( settings.bgDraw ) {
     
-            bg = document.createElementNS( svgNS, 'rect' );
-            bg.setAttribute( 'x', 0 );
-            bg.setAttribute( 'y', 0 );
+            bg = document.createElementNS( svgNS, 'circle' ); // rect
+            // bg.setAttribute( 'x', 0 ); // rect
+            // bg.setAttribute( 'y', 0 ); // rect
+            bg.setAttribute( 'cx', '50%' );
+            bg.setAttribute( 'cy', '50%' );
+            bg.setAttribute( 'r', '47.5%' );
             bg.setAttribute( 'fill', settings.bgColor );
 
             svg.appendChild( bg );
