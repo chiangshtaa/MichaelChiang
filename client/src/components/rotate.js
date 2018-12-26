@@ -8,7 +8,7 @@ export default function(conditional, iconSize = 50, fontSize = 24, radiusLength 
   // console.log(iconSize);
   console.log(fontSize);
   // console.log(radiusLength);
-  var entries = ['css3', 'github', 'html5', 'javascript', 'jest', 'jquery', 'mongoDB', 'nodeJS', 'postgreSQL', 'react', 'redux'];
+  var entries = ['css3', 'github', 'html5', 'javascript', 'jest', 'jquery', 'mongoDB', 'nodeJS', 'postgreSQL', 'react', 'redux', 'mocha'];
   entries = entries.map((entry) => {
     return {
       tooltip: entry,
