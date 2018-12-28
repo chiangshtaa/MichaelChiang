@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
-import Board2048 from './Board2048.js';
+// import Board2048 from './Board2048.js';
+import MineSweeper from './minesweeper/MineSweeper.js';
 import './css/About.css';
 
 // import ticTacToe from './css/img/tictactoe.jpg';
@@ -58,15 +59,30 @@ class About2 extends Component {
               </div>
             </div>
             <div className="container-2048">
-              {<Board2048/>}
+              {<MineSweeper />}
+              {/*<Board2048/>*/}
               {/*<img className="tictactoe" src={ticTacToe} alt="tictactoe" />*/}
 
-              <div className="rules">
+              {/*<div className="rules">
                 <div className="how-to">How To Play: </div>
                 <div className="instructions">
                    When two tiles with the same number touch, they'll merge into one! 
                    Reach <div className="win">2048</div> and you win!
                 </div>
+              </div>*/}
+              <div className="instruction">
+                <div className="how-to">How To Play</div>
+                <div>If you click on a bomb, you lose. </div>
+                <div>If you click all the squares (without clicking on any bombs), you win.</div>
+                <div>Right click to mark a square you think is a bomb.</div>
+                <div>Flag all the bombs and you win!</div>
+                {/*<div className="how-to">How To Play: </div>
+                <div className="instructions">
+                  <div>If you click on a bomb, you lose. </div>
+                  <div>If you click all the squares (without clicking on any bombs), you win.</div>
+                  <div>Right click to mark a square you think is a bomb.</div>
+                  <div>Flag all the bombs and you win!</div>
+                </div>*/}
               </div>
             </div>
           </div>

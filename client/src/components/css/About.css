@@ -74,6 +74,7 @@
   /*width: 20%;*/
   color: black;
   font-weight: 600;
+  text-align: center !important;
 }
 
 .instructions {
@@ -83,6 +84,10 @@
 .win {
   color: rgba(235, 67, 35, 0.75);
   display: inline-block;
+}
+
+.instruction {
+  margin-top: 15px;
 }
 
 
