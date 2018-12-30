@@ -9,9 +9,19 @@
   content: '';
 }
 
-h2 {
+.game h2 {
   color: #1e836c;
 }
+
+
+.how-to {
+  min-width: 110px;
+  /*width: 20%;*/
+  color: #1e836c;
+  font-weight: 600;
+  text-align: center !important;
+}
+
 /*.board {
   display: flex;
   flex-direction: column;

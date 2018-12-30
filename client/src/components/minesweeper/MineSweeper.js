@@ -60,6 +60,13 @@ class MineSweeper extends React.Component {
         </div>
 
         <Board height={this.state.height} width={this.state.width} mines={this.state.mines} change={this.state.newGame}/>
+      <div className="instruction">
+        <div className="how-to">How To Play</div>
+        <div>If you click on a bomb, you lose. </div>
+        <div>If you click all the squares (without clicking on any bombs), you win.</div>
+        <div>Right click to mark a square you think is a bomb.</div>
+        <div>Flag all the bombs and you win!</div>
+      </div>
       </div>
     )
   }
